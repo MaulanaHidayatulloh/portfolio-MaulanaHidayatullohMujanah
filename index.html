@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -21,9 +21,10 @@
       <a href="#" class="logo">Portfolio</a>
 
       <nav class="navbar">
-        <a href="#home" class="active">Home</a>
+        <a id="home-navbar" href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -86,14 +87,14 @@
       </div>
 
       <div class="home-img">
-        <img src="images/Foto_Profil_Maulana.png" alt="" />
+        <img src="images/Foto_Profil_Maulana.webp" alt="" />
       </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="images/maulana.png" alt="" />
+        <img src="images/maulana.webp" alt="" />
       </div>
 
       <div class="about-content">
@@ -106,7 +107,7 @@
           created design systems as well.
         </p>
         <a
-          href="CV/CV_Maulana Hidayatulloh Mujanah.pdf"
+          href="data/CV_Maulana Hidayatulloh Mujanah.pdf"
           download="CV_Maulana Hidayatulloh Mujanah.pdf"
           class="btn"
           >Download CV</a
@@ -120,25 +121,153 @@
 
       <div class="education-container">
         <div class="education-box">
-          <img src="images/smpn205jakarta.png" alt="smp" />
+          <img src="images/smpn-205.svg" alt="smp" />
           <h3>SMPN 205 Jakarta</h3>
           <h4>Junior High School</h4>
           <p>2015 - 2018</p>
-          <a href="https://www.smpn205jkt.sch.id/" class="btn">Read More</a>
+          <a href="https://smpn205jkt.sch.id/main" class="btn" target="_blank"
+            >Read More</a
+          >
         </div>
         <div class="education-box">
-          <img src="images/sman94jakarta.png" alt="sma" />
+          <img src="images/sma-94.svg" alt="sma" />
           <h3>SMAN 94 Jakarta</h3>
           <h4>Senior High School</h4>
           <p>2018 - 2021</p>
-          <a href="https://sman94.sch.id/" class="btn">Read More</a>
+          <a
+            href="https://www.sman94jakarta.sch.id/"
+            class="btn"
+            target="_blank"
+            >Read More</a
+          >
         </div>
         <div class="education-box">
-          <img src="images/universitas_gunadarma.png" alt="University" />
+          <img src="images/gunadarma.svg" alt="University" />
           <h3>universitas Gunadarma</h3>
           <h4>Bachelor Of Informatics</h4>
           <p>2021 - 2025</p>
-          <a href="https://gunadarma.ac.id/" class="btn">Read More</a>
+          <a href="https://gunadarma.ac.id/" class="btn" target="_blank"
+            >Read More</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Training & Experience Section -->
+    <section class="experience" id="experience">
+      <h2 class="heading">Training & <span>Experience</span></h2>
+
+      <div class="experience-content">
+        <div class="experience-group">
+          <div class="experience-group-title">
+            <i class="bx bx-briefcase-alt-2"></i>
+            <h3>Experience</h3>
+          </div>
+
+          <!-- 1 -->
+          <article class="experience-card">
+            <div class="experience-card-icon">
+              <img src="images/suara.svg" alt="suara" />
+            </div>
+            <div class="experience-card-content">
+              <div class="experience-card-header">
+                <h4>IT Frontend</h4>
+                <span>Aug 2026 – Feb 2027</span>
+              </div>
+              <h5>Maganghub Kemnaker RI – PT Arkadia Media Nusantara</h5>
+              <p>
+                Mengembangkan dan membangun antarmuka frontend untuk website,
+                menerapkan desain responsif, serta mengoptimalkan pengalaman
+                pengguna menggunakan teknologi web modern.
+              </p>
+            </div>
+          </article>
+
+          <!-- 2 -->
+          <article class="experience-card">
+            <div class="experience-card-icon">
+              <img src="images/celerates.svg" alt="celerates" />
+            </div>
+            <div class="experience-card-content">
+              <div class="experience-card-header">
+                <h4>Web Development & UI/UX Design</h4>
+                <span>Feb 2024 – Juni 2024</span>
+              </div>
+              <h5>MSIB Batch 6 – PT Mitra Talenta Grup</h5>
+              <p>
+                Mengembangkan Hi-Fi user interface dan frontend, serta aplikasi
+                web frontend dan backend melalui Micro dan Massive Problem
+                Project dengan pendekatan penelitian, wawancara stakeholder,
+                studi literatur/jurnal, dan SCRUM.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <div class="experience-group">
+          <div class="experience-group-title">
+            <i class="bx bx-certification"></i>
+            <h3>Training & Certification</h3>
+          </div>
+
+          <div class="training-grid">
+            <article class="training-card">
+              <div class="training-icon">
+                <img src="images/bnsp.svg" alt="bnsp" />
+              </div>
+              <div>
+                <div class="training-card-header">
+                  <h4>
+                    Kompetensi Lembaga Sertifikasi Profesi - Junior Web
+                    Programmer
+                  </h4>
+                  <span>Juni 2025</span>
+                </div>
+                <h5>LSP/BNSP</h5>
+                <p>
+                  Sertifikasi kompetensi Junior Web Programmer yang mencakup
+                  implementasi user interface, penulisan kode terstruktur,
+                  penggunaan library, dokumentasi, dan debugging aplikasi web.
+                </p>
+                <a
+                  href="data/Sertifikat Kompetensi LSP -  JWP.pdf"
+                  class="certificate-btn"
+                  download
+                  aria-label="Download sertifikat Kompetensi Junior Web Programmer"
+                >
+                  <i class="bx bx-download"></i>
+                  Download Certificate
+                </a>
+              </div>
+            </article>
+
+            <article class="training-card">
+              <div class="training-icon">
+                <img src="images/gunadarma.svg" alt="gunadarma" />
+              </div>
+              <div>
+                <div class="training-card-header">
+                  <h4>Bootcamp Membangun Website Menggunakan HTML 5</h4>
+                  <span>Oktober 2023</span>
+                </div>
+                <h5>Universitas Gunadarma</h5>
+                <p>
+                  Mempelajari dasar HTML5, penggunaan elemen dan struktur
+                  halaman web, canvas HTML5, serta pembuatan website sederhana
+                  dengan HTML.
+                </p>
+                <a
+                  href="data/Sertifikat_HTML5.pdf"
+                  class="certificate-btn"
+                  download
+                  aria-label="Download sertifikat Bootcamp HTML 5"
+                >
+                  <i class="bx bx-download"></i>
+                  Download Certificate
+                </a>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -150,7 +279,7 @@
       <div class="projects-container">
         <!-- #1 -->
         <div class="project-box">
-          <img src="images/bioskop.png" alt="" />
+          <img src="images/bioskop.webp" alt="" />
 
           <div class="projects-layer">
             <h4>Project Bioskop</h4>
@@ -165,7 +294,7 @@
 
         <!-- #2 -->
         <div class="project-box">
-          <img src="images/Blender.png" alt="" />
+          <img src="images/Blender.webp" alt="" />
 
           <div class="projects-layer">
             <h4>kitchen room</h4>
@@ -179,7 +308,7 @@
 
         <!-- #3 -->
         <div class="project-box">
-          <img src="images/figma_gundarfilm.png" alt="" />
+          <img src="images/figma_gundarfilm.webp" alt="" />
 
           <div class="projects-layer">
             <h4>Gundar Film</h4>
@@ -193,7 +322,7 @@
 
         <!-- #4 -->
         <div class="project-box">
-          <img src="images/CateringKita.png" alt="" />
+          <img src="images/CateringKita.webp" alt="" />
 
           <div class="projects-layer">
             <h4>Project Catering Kita</h4>
@@ -206,7 +335,7 @@
 
         <!-- #5 -->
         <div class="project-box">
-          <img src="images/warung-bangjaja.png" alt="" />
+          <img src="images/warung-bangjaja.webp" alt="" />
 
           <div class="projects-layer">
             <h4>Project Warung BangJaja</h4>
@@ -222,7 +351,7 @@
 
         <!-- #6 -->
         <div class="project-box">
-          <img src="images/RemajaBijak.png" alt="" />
+          <img src="images/RemajaBijak.webp" alt="" />
 
           <div class="projects-layer">
             <h4>Project RemajaBijak</h4>
@@ -237,7 +366,7 @@
 
         <!-- #7 -->
         <div class="project-box">
-          <img src="images/rehatin.png" alt="" />
+          <img src="images/rehatin.webp" alt="" />
 
           <div class="projects-layer">
             <h4>Project Rehatin</h4>
@@ -253,7 +382,7 @@
 
         <!-- #8 -->
         <div class="project-box">
-          <img src="images/RehatinV2.png" alt="" />
+          <img src="images/RehatinV2.webp" alt="" />
 
           <div class="projects-layer">
             <h4>Project Rehatin V2</h4>
@@ -269,7 +398,7 @@
 
         <!-- #9 -->
         <div class="project-box">
-          <img src="images/banjar_buah.png" alt="" />
+          <img src="images/banjar_buah.webp" alt="" />
 
           <div class="projects-layer">
             <h4>Project Banjar Buah</h4>
@@ -313,7 +442,7 @@
     <footer class="footer">
       <div class="footer-text">
         <p>
-          Copyright &copy; 2023 by Maulana Hidayatulloh Mujanah | All Rights
+          Copyright &copy; 2026 by Maulana Hidayatulloh Mujanah | All Rights
           Reserved
         </p>
       </div>
@@ -324,7 +453,7 @@
     </footer>
 
     <!-- Scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
 
     <!-- Java Script -->
     <script src="js/script.js"></script>

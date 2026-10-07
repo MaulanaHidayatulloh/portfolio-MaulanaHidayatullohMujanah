@@ -58,23 +58,10 @@ ScrollReveal().reveal(".home-content, .heading", {
   origin: "top",
 });
 ScrollReveal().reveal(
-  ".home-img img, .education-container, projects-box, .contact form, .project-box",
-  { origin: "bottom" }
+  ".home-img img, .education-container, projects-box, .contact form, .project-box, .experience-content",
+  { origin: "bottom" },
 );
 ScrollReveal().reveal(".home-content h1, .about-img img", { origin: "left" });
 ScrollReveal().reveal(".home-content h3, .home-content p, .about-content", {
   origin: "right",
 });
-
-// backend
-// Ganti URL sesuai dengan alamat file PHP di XAMPP
-const educationApiUrl = "http://localhost/backend/get_education.php";
-
-// Ambil data pendidikan
-fetch(educationApiUrl)
-  .then((response) => response.json())
-  .then((data) => {
-    // Update frontend untuk menampilkan data pendidikan
-    console.log(data);
-  })
-  .catch((error) => console.error("Error fetching education data:", error));
