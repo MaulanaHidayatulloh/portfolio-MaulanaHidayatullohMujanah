@@ -4,7 +4,100 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Maulana Hidayatulloh Mujanah</title>
+
+    <title>Maulana Hidayatulloh Mujanah | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Maulana Hidayatulloh Mujanah, an Informatics graduate and frontend developer experienced in responsive web development, UI/UX design, and full-stack web projects."
+    />
+    <meta
+      name="keywords"
+      content="Maulana Hidayatulloh Mujanah, Frontend Developer, Web Developer, UI/UX Designer, React Developer, JavaScript Developer, PHP Developer, Gunadarma"
+    />
+    <meta name="author" content="Maulana Hidayatulloh Mujanah" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#754ef9" />
+    <link
+      rel="canonical"
+      href="https://maulanahidayatulloh.github.io/portfolio-MaulanaHidayatullohMujanah/"
+    />
+    <link rel="icon" type="image/svg+xml" href="images/Icon.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Maulana Hidayatulloh Mujanah | Frontend Developer"
+    />
+    <meta
+      property="og:description"
+      content="Explore the portfolio, experience, skills, certifications, and web development projects of Maulana Hidayatulloh Mujanah."
+    />
+    <meta
+      property="og:url"
+      content="https://maulanahidayatulloh.github.io/portfolio-MaulanaHidayatullohMujanah/"
+    />
+    <meta
+      property="og:site_name"
+      content="Maulana Hidayatulloh Mujanah Portfolio"
+    />
+    <meta
+      property="og:image"
+      content="https://maulanahidayatulloh.github.io/portfolio-MaulanaHidayatullohMujanah/images/Foto_Profil_Maulana.webp"
+    />
+    <meta
+      property="og:image:alt"
+      content="Maulana Hidayatulloh Mujanah - Frontend Developer"
+    />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Maulana Hidayatulloh Mujanah | Frontend Developer"
+    />
+    <meta
+      name="twitter:description"
+      content="Portfolio, experience, skills, certifications, and web development projects by Maulana Hidayatulloh Mujanah."
+    />
+    <meta
+      name="twitter:image"
+      content="https://hidayatulloh.github.io/images/Foto_Profil_Maulana.webp"
+    />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Maulana Hidayatulloh Mujanah",
+        "url": "https://maulanahidayatulloh.github.io/portfolio-MaulanaHidayatullohMujanah/",
+        "image": "https://maulanahidayatulloh.github.io/portfolio-MaulanaHidayatullohMujanah/images/Foto_Profil_Maulana.webp",
+        "jobTitle": "Frontend Developer",
+        "description": "Informatics graduate and frontend developer focused on responsive web development, UI/UX design, and full-stack web projects.",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Universitas Gunadarma",
+          "url": "https://gunadarma.ac.id/"
+        },
+        "sameAs": [
+          "https://github.com/MaulanaHidayatulloh",
+          "https://www.linkedin.com/in/maulanahidayatulloh",
+          "https://www.instagram.com/maulana_x13/"
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Maulana Hidayatulloh Mujanah Portfolio",
+        "url": "https://maulanahidayatulloh.github.io/portfolio-MaulanaHidayatullohMujanah/",
+        "description": "Personal portfolio website of Maulana Hidayatulloh Mujanah, Frontend Developer and Web Developer."
+      }
+    </script>
 
     <!-- Box Icons -->
     <link
@@ -18,9 +111,9 @@
   <body>
     <!-- Header -->
     <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+      <a href="#home" class="logo" aria-label="Go to homepage">Portfolio</a>
 
-      <nav class="navbar">
+      <nav class="navbar" aria-label="Primary navigation">
         <a id="home-navbar" href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#education">Education</a>
@@ -29,414 +122,688 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <div class="bx bx-moon" id="darkMode-icon"></div>
+      <button
+        type="button"
+        class="bx bx-moon"
+        id="darkMode-icon"
+        aria-label="Toggle dark mode"
+      ></button>
 
-      <div class="bx bx-menu" id="menu-icon"></div>
+      <button
+        type="button"
+        class="bx bx-menu"
+        id="menu-icon"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+      ></button>
     </header>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, I am</h3>
-        <h1>Maulana Hidayatulloh</h1>
-        <p>
-          I am a graduate of the Informatics major at Gunadarma University. I
-          have a strong interest in mathematics-related subjects and aspire to
-          become a full-stack developer.
-        </p>
+    <main>
+      <!-- Home Section -->
+      <section class="home" id="home" aria-labelledby="home-title">
+        <div class="home-content">
+          <h3>Hello, I am</h3>
+          <h1 id="home-title">Maulana Hidayatulloh</h1>
+          <p>
+            I am an Informatics graduate and frontend developer with experience
+            building responsive web interfaces, implementing UI/UX designs, and
+            developing practical web applications. I enjoy turning ideas into
+            clean, accessible, and user-focused digital experiences.
+          </p>
 
-        <div class="social-media">
-          <a href="https://www.facebook.com/"
-            ><i class="bx bxl-facebook"></i
-          ></a>
-          <a href="https://twitter.com/"><i class="bx bxl-twitter"></i></a>
-          <a href="https://www.instagram.com/maulana_x13?igsh=MzNlNGNkZWQ4Mg=="
-            ><i class="bx bxl-instagram-alt"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/maulanahidayatulloh"
-            ><i class="bx bxl-linkedin"></i
-          ></a>
-        </div>
-
-        <a href="mailto:maulhidayatulloh@gmail.com" class="btn">Contact Me</a>
-      </div>
-
-      <div class="profession-container">
-        <div class="profession-box">
-          <div class="profession" style="--i: 0">
-            <i class="bx bx-code-alt"></i>
-            <h3>Web Developer</h3>
-          </div>
-          <div class="profession" style="--i: 1">
-            <i class="bx bx-laptop"></i>
-            <h3>Frontend Dev</h3>
-          </div>
-          <div class="profession" style="--i: 2">
-            <i class="bx bx-data"></i>
-            <h3>Backend Dev</h3>
-          </div>
-          <div class="profession" style="--i: 3">
-            <i class="bx bx-palette"></i>
-            <h3>UI/UX Designer</h3>
+          <div class="social-media" aria-label="Social media links">
+            <a
+              href="https://github.com/MaulanaHidayatulloh"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub profile"
+              ><i class="bx bxl-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/maulanahidayatulloh"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/maulana_x13/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram profile"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
           </div>
 
-          <div class="circle"></div>
+          <a href="#contact" class="btn">Let's Work Together</a>
         </div>
 
-        <div class="overlay"></div>
-      </div>
-
-      <div class="home-img">
-        <img src="images/Foto_Profil_Maulana.webp" alt="" />
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/maulana.webp" alt="" />
-      </div>
-
-      <div class="about-content">
-        <h2 class="heading">About <span> Me</span></h2>
-        <h3>Hi, I'm Here To Help Your Next Project!</h3>
-        <p>
-          I'm a website developer with experience in building responsive and
-          optimized websites. I have experience developing fast and optimized
-          back-end systems and APIs. I have designed multiple landing pages and
-          created design systems as well.
-        </p>
-        <a
-          href="data/CV_Maulana Hidayatulloh Mujanah.pdf"
-          download="CV_Maulana Hidayatulloh Mujanah.pdf"
-          class="btn"
-          >Download CV</a
-        >
-      </div>
-    </section>
-
-    <!-- Education Section -->
-    <section class="education" id="education">
-      <h2 class="heading">Educational <span>Background</span></h2>
-
-      <div class="education-container">
-        <div class="education-box">
-          <img src="images/smpn-205.svg" alt="smp" />
-          <h3>SMPN 205 Jakarta</h3>
-          <h4>Junior High School</h4>
-          <p>2015 - 2018</p>
-          <a href="https://smpn205jkt.sch.id/main" class="btn" target="_blank"
-            >Read More</a
-          >
-        </div>
-        <div class="education-box">
-          <img src="images/sma-94.svg" alt="sma" />
-          <h3>SMAN 94 Jakarta</h3>
-          <h4>Senior High School</h4>
-          <p>2018 - 2021</p>
-          <a
-            href="https://www.sman94jakarta.sch.id/"
-            class="btn"
-            target="_blank"
-            >Read More</a
-          >
-        </div>
-        <div class="education-box">
-          <img src="images/gunadarma.svg" alt="University" />
-          <h3>universitas Gunadarma</h3>
-          <h4>Bachelor Of Informatics</h4>
-          <p>2021 - 2025</p>
-          <a href="https://gunadarma.ac.id/" class="btn" target="_blank"
-            >Read More</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Training & Experience Section -->
-    <section class="experience" id="experience">
-      <h2 class="heading">Training & <span>Experience</span></h2>
-
-      <div class="experience-content">
-        <div class="experience-group">
-          <div class="experience-group-title">
-            <i class="bx bx-briefcase-alt-2"></i>
-            <h3>Experience</h3>
-          </div>
-
-          <!-- 1 -->
-          <article class="experience-card">
-            <div class="experience-card-icon">
-              <img src="images/suara.svg" alt="suara" />
+        <div class="profession-container" aria-hidden="true">
+          <div class="profession-box">
+            <div class="profession" style="--i: 0">
+              <i class="bx bx-code-alt"></i>
+              <h3>Web Developer</h3>
             </div>
-            <div class="experience-card-content">
-              <div class="experience-card-header">
-                <h4>IT Frontend</h4>
-                <span>Aug 2026 – Feb 2027</span>
-              </div>
-              <h5>Maganghub Kemnaker RI – PT Arkadia Media Nusantara</h5>
-              <p>
-                Mengembangkan dan membangun antarmuka frontend untuk website,
-                menerapkan desain responsif, serta mengoptimalkan pengalaman
-                pengguna menggunakan teknologi web modern.
-              </p>
+            <div class="profession" style="--i: 1">
+              <i class="bx bx-laptop"></i>
+              <h3>Frontend Dev</h3>
+            </div>
+            <div class="profession" style="--i: 2">
+              <i class="bx bx-data"></i>
+              <h3>Backend Dev</h3>
+            </div>
+            <div class="profession" style="--i: 3">
+              <i class="bx bx-palette"></i>
+              <h3>UI/UX Designer</h3>
+            </div>
+            <div class="circle"></div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+          <img
+            src="images/Foto_Profil_Maulana.webp"
+            alt="Maulana Hidayatulloh Mujanah, Frontend Developer"
+          />
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <div class="about-img">
+          <img src="images/maulana.webp" alt="" />
+        </div>
+
+        <div class="about-content">
+          <h2 class="heading">About <span> Me</span></h2>
+          <h3>Frontend Developer with a Full-Stack Perspective</h3>
+          <p>
+            I'm an Informatics graduate from Gunadarma University with a strong
+            interest in web development and UI/UX design. I have experience
+            building responsive web applications through academic projects, the
+            MSIB program, professional training, and frontend internship
+            experience. My work covers frontend interface development, backend
+            functionality, database integration, and translating UI/UX concepts
+            into functional web applications.
+          </p>
+
+          <div class="about-actions">
+            <a
+              href="data/CV_Maulana Hidayatulloh Mujanah.pdf"
+              download="CV_Maulana Hidayatulloh Mujanah.pdf"
+              class="btn"
+              >Download CV</a
+            >
+            <a
+              href="https://github.com/MaulanaHidayatulloh"
+              class="text-link"
+              target="_blank"
+              rel="noopener noreferrer"
+              >View GitHub Profile <i class="bx bx-right-arrow-alt"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills" id="skills" aria-labelledby="skills-title">
+        <h2 class="heading" id="skills-title">Technical <span>Skills</span></h2>
+        <p class="section-intro">
+          Technologies and tools I use to design, build, and improve web
+          applications.
+        </p>
+
+        <div class="skills-container">
+          <article class="skill-card">
+            <div class="skill-card-icon"><i class="bx bx-code-alt"></i></div>
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              <span>React.js</span><span>Tailwind CSS</span>
             </div>
           </article>
 
-          <!-- 2 -->
-          <article class="experience-card">
-            <div class="experience-card-icon">
-              <img src="images/celerates.svg" alt="celerates" />
+          <article class="skill-card">
+            <div class="skill-card-icon"><i class="bx bx-server"></i></div>
+            <h3>Backend</h3>
+            <div class="skill-tags">
+              <span>PHP</span><span>Node.js</span><span>Express.js</span>
+              <span>CodeIgniter</span><span>Laravel</span><span>Java</span>
             </div>
-            <div class="experience-card-content">
-              <div class="experience-card-header">
-                <h4>Web Development & UI/UX Design</h4>
-                <span>Feb 2024 – Juni 2024</span>
-              </div>
-              <h5>MSIB Batch 6 – PT Mitra Talenta Grup</h5>
-              <p>
-                Mengembangkan Hi-Fi user interface dan frontend, serta aplikasi
-                web frontend dan backend melalui Micro dan Massive Problem
-                Project dengan pendekatan penelitian, wawancara stakeholder,
-                studi literatur/jurnal, dan SCRUM.
-              </p>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card-icon"><i class="bx bx-data"></i></div>
+            <h3>Database</h3>
+            <div class="skill-tags">
+              <span>MySQL</span><span>PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <div class="skill-card-icon"><i class="bx bx-palette"></i></div>
+            <h3>Design & Tools</h3>
+            <div class="skill-tags">
+              <span>Figma</span><span>Canva</span><span>Git</span
+              ><span>GitHub</span> <span>VS Code</span><span>UI/UX Design</span
+              ><span>DrawIO</span>
             </div>
           </article>
         </div>
+      </section>
 
-        <div class="experience-group">
-          <div class="experience-group-title">
-            <i class="bx bx-certification"></i>
-            <h3>Training & Certification</h3>
+      <!-- Education Section -->
+      <section
+        class="education"
+        id="education"
+        aria-labelledby="education-title"
+      >
+        <h2 class="heading" id="education-title">
+          Educational <span>Background</span>
+        </h2>
+
+        <div class="education-container">
+          <div class="education-box">
+            <img
+              src="images/smpn-205.svg"
+              alt="SMPN 205 Jakarta logo"
+              loading="lazy"
+            />
+            <h3>SMPN 205 Jakarta</h3>
+            <h4>Junior High School</h4>
+            <p>2015 - 2018</p>
+            <a
+              href="https://smpn205jkt.sch.id/main"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Visit School</a
+            >
           </div>
+          <div class="education-box">
+            <img
+              src="images/sma-94.svg"
+              alt="SMAN 94 Jakarta logo"
+              loading="lazy"
+            />
+            <h3>SMAN 94 Jakarta</h3>
+            <h4>Senior High School</h4>
+            <p>2018 - 2021</p>
+            <a
+              href="https://www.sman94jakarta.sch.id/"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Visit School</a
+            >
+          </div>
+          <div class="education-box">
+            <img
+              src="images/gunadarma.svg"
+              alt="Universitas Gunadarma logo"
+              loading="lazy"
+            />
+            <h3>Universitas Gunadarma</h3>
+            <h4>Bachelor of Informatics <br />GPA: 3.90</h4>
+            <p>2021 - 2025</p>
+            <a
+              href="https://gunadarma.ac.id/"
+              class="btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Visit University</a
+            >
+          </div>
+        </div>
+      </section>
 
-          <div class="training-grid">
-            <article class="training-card">
-              <div class="training-icon">
-                <img src="images/bnsp.svg" alt="bnsp" />
+      <!-- Training & Experience Section -->
+      <section
+        class="experience"
+        id="experience"
+        aria-labelledby="experience-title"
+      >
+        <h2 class="heading" id="experience-title">
+          Training & <span>Experience</span>
+        </h2>
+
+        <div class="experience-content">
+          <div class="experience-group">
+            <div class="experience-group-title">
+              <i class="bx bx-briefcase-alt-2"></i>
+              <h3>Professional Experience</h3>
+            </div>
+
+            <article class="experience-card">
+              <div class="experience-card-icon">
+                <img
+                  src="images/suara.svg"
+                  alt="Suara.com logo"
+                  loading="lazy"
+                />
               </div>
-              <div>
-                <div class="training-card-header">
-                  <h4>
-                    Kompetensi Lembaga Sertifikasi Profesi - Junior Web
-                    Programmer
-                  </h4>
-                  <span>Juni 2025</span>
+              <div class="experience-card-content">
+                <div class="experience-card-header">
+                  <h4>IT Frontend Intern</h4>
+                  <span>Aug 2026 – Feb 2027</span>
                 </div>
-                <h5>LSP/BNSP</h5>
+                <h5>
+                  Maganghub Kemnaker RI – PT Arkadia Media Nusantara (Suara.com)
+                </h5>
                 <p>
-                  Sertifikasi kompetensi Junior Web Programmer yang mencakup
-                  implementasi user interface, penulisan kode terstruktur,
-                  penggunaan library, dokumentasi, dan debugging aplikasi web.
+                  Developed and maintained responsive frontend interfaces for
+                  web-based platforms, translating UI/UX designs into functional
+                  and reusable interface components. Worked on responsive
+                  layouts across desktop, tablet, and mobile devices while
+                  focusing on usability, visual consistency, and user
+                  experience. Collaborated with the development team to
+                  implement frontend features, troubleshoot UI issues, and apply
+                  modern web development practices to improve the quality and
+                  maintainability of web interfaces.
                 </p>
-                <a
-                  href="data/Sertifikat Kompetensi LSP -  JWP.pdf"
-                  class="certificate-btn"
-                  download
-                  aria-label="Download sertifikat Kompetensi Junior Web Programmer"
-                >
-                  <i class="bx bx-download"></i>
-                  Download Certificate
-                </a>
               </div>
             </article>
 
-            <article class="training-card">
-              <div class="training-icon">
-                <img src="images/gunadarma.svg" alt="gunadarma" />
+            <article class="experience-card">
+              <div class="experience-card-icon">
+                <img
+                  src="images/celerates.svg"
+                  alt="Celerates logo"
+                  loading="lazy"
+                />
               </div>
-              <div>
-                <div class="training-card-header">
-                  <h4>Bootcamp Membangun Website Menggunakan HTML 5</h4>
-                  <span>Oktober 2023</span>
+              <div class="experience-card-content">
+                <div class="experience-card-header">
+                  <h4>Web Development & UI/UX Design</h4>
+                  <span>Feb 2024 – Jun 2024</span>
                 </div>
-                <h5>Universitas Gunadarma</h5>
+                <h5>MSIB Batch 6 – PT Mitra Talenta Grup (Celerates)</h5>
                 <p>
-                  Mempelajari dasar HTML5, penggunaan elemen dan struktur
-                  halaman web, canvas HTML5, serta pembuatan website sederhana
-                  dengan HTML.
+                  Designed high-fidelity user interfaces and developed
+                  responsive frontend and backend applications through the Micro
+                  and Massive Problem Projects. Conducted research, stakeholder
+                  interviews, and literature or journal studies to identify
+                  requirements and usability considerations. Collaborated with
+                  the project team using the SCRUM methodology, presented design
+                  and development outcomes, and translated research findings
+                  into practical web application solutions.
                 </p>
-                <a
-                  href="data/Sertifikat_HTML5.pdf"
-                  class="certificate-btn"
-                  download
-                  aria-label="Download sertifikat Bootcamp HTML 5"
-                >
-                  <i class="bx bx-download"></i>
-                  Download Certificate
-                </a>
               </div>
             </article>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-      <h2 class="heading">My <span>Projects</span></h2>
+          <div class="experience-group">
+            <div class="experience-group-title">
+              <i class="bx bx-certification"></i>
+              <h3>Training & Certifications</h3>
+            </div>
 
-      <div class="projects-container">
-        <!-- #1 -->
-        <div class="project-box">
-          <img src="images/bioskop.webp" alt="" />
+            <div class="training-grid">
+              <article class="training-card">
+                <div class="training-icon">
+                  <img src="images/bnsp.svg" alt="BNSP logo" loading="lazy" />
+                </div>
+                <div>
+                  <div class="training-card-header">
+                    <h4>Junior Web Programmer Certification</h4>
+                    <span>Jun 2025</span>
+                  </div>
+                  <h5>LSP / BNSP</h5>
+                  <p>
+                    Professional competency certification covering user
+                    interface implementation, structured programming, coding
+                    best practices, reusable libraries or components, code
+                    documentation, and application debugging for web
+                    development.
+                  </p>
+                  <a
+                    href="data/Sertifikat Kompetensi LSP -  JWP.pdf"
+                    class="certificate-btn"
+                    download
+                    aria-label="Download Junior Web Programmer certificate"
+                  >
+                    <i class="bx bx-download"></i> Download Certificate
+                  </a>
+                </div>
+              </article>
 
-          <div class="projects-layer">
-            <h4>Project Bioskop</h4>
-            <p>
-              This is a cinema website project for buying cinema tickets online.
-            </p>
-            <a href="https://bioskop-turu.netlify.app/"
-              ><i class="bx bx-link-external"></i
-            ></a>
+              <article class="training-card">
+                <div class="training-icon">
+                  <img
+                    src="images/gunadarma.svg"
+                    alt="Universitas Gunadarma logo"
+                    loading="lazy"
+                  />
+                </div>
+                <div>
+                  <div class="training-card-header">
+                    <h4>HTML5 Web Development Bootcamp</h4>
+                    <span>Oct 2023</span>
+                  </div>
+                  <h5>Universitas Gunadarma</h5>
+                  <p>
+                    Covered HTML5 fundamentals, semantic page structure, common
+                    HTML5 elements, HTML5 Canvas, and the development of simple
+                    websites using standard web technologies.
+                  </p>
+                  <a
+                    href="data/Sertifikat_HTML5.pdf"
+                    class="certificate-btn"
+                    download
+                    aria-label="Download HTML5 bootcamp certificate"
+                  >
+                    <i class="bx bx-download"></i> Download Certificate
+                  </a>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- #2 -->
-        <div class="project-box">
-          <img src="images/Blender.webp" alt="" />
+      <!-- Featured Projects -->
+      <section class="featured-projects" aria-labelledby="featured-title">
+        <h2 class="heading" id="featured-title">
+          Featured <span>Projects</span>
+        </h2>
+        <p class="section-intro">
+          A selection of projects that best represent my web development,
+          frontend, backend, and UI/UX experience.
+        </p>
 
-          <div class="projects-layer">
-            <h4>kitchen room</h4>
-            <p>This is a kitchen room project made in Blender version 3.6.</p>
-            <a
-              href="https://drive.google.com/drive/folders/1SsGVpHUh2cP1XCIk-VESFyO1y9K7Zlhc?usp=sharing"
-              ><i class="bx bx-link-external"></i
-            ></a>
+        <div class="featured-projects-container">
+          <article class="featured-project-card">
+            <div class="featured-project-image">
+              <img
+                src="images/RehatinV2.webp"
+                alt="Rehatin V2 tourism website interface"
+                loading="lazy"
+              />
+            </div>
+            <div class="featured-project-content">
+              <span class="project-number">01</span>
+              <h3>Rehatin V2</h3>
+              <p>
+                A tourism information platform covering destinations across
+                Indonesia, enhanced with an AI chatbot, wishlist, user reviews,
+                authentication, and destination search features.
+              </p>
+              <div class="project-tech">
+                <span>React.js</span><span>Express.js</span><span>MySQL</span
+                ><span>FlowiseAI</span>
+              </div>
+              <div class="featured-project-actions">
+                <a
+                  href="https://github.com/MaulanaHidayatulloh/Rehatin_V2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                  style="gap: 0.7rem"
+                  >GitHub <i class="bx bxl-github"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-project-card">
+            <div class="featured-project-image">
+              <img
+                src="images/CateringKita.webp"
+                alt="Catering Kita web application interface"
+                loading="lazy"
+              />
+            </div>
+            <div class="featured-project-content">
+              <span class="project-number">02</span>
+              <h3>Catering Kita</h3>
+              <p>
+                A web-based catering ordering platform that helps customers
+                browse menus and place orders while providing administration
+                features for managing menus and orders.
+              </p>
+              <div class="project-tech">
+                <span>PHP</span><span>CodeIgniter</span><span>MySQL</span>
+              </div>
+              <div class="featured-project-actions">
+                <a
+                  href="https://github.com/MaulanaHidayatulloh/Catering-Kita"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                  style="gap: 0.7rem"
+                  >GitHub <i class="bx bxl-github"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="featured-project-card">
+            <div class="featured-project-image">
+              <img
+                src="images/warung-bangjaja.webp"
+                alt="Warung BangJaja e-commerce website interface"
+                loading="lazy"
+              />
+            </div>
+            <div class="featured-project-content">
+              <span class="project-number">03</span>
+              <h3>Warung BangJaja</h3>
+              <p>
+                An e-commerce website designed to help a small retail business
+                manage products, online sales, and customer orders through a
+                simple and user-friendly shopping experience.
+              </p>
+              <div class="project-tech">
+                <span>PHP</span><span>MySQL</span><span>JavaScript</span
+                ><span>Midtrans</span>
+              </div>
+              <div class="featured-project-actions">
+                <a
+                  href="https://github.com/MaulanaHidayatulloh/warungbangjaja"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn"
+                  style="gap: 0.7rem"
+                  >GitHub <i class="bx bxl-github"></i
+                ></a>
+                <a
+                  href="https://warung-bangjaja.free.nf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="project-secondary-link"
+                  >Live Demo <i class="bx bx-link-external"></i
+                ></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <h2 class="heading" id="projects-title">Other <span>Projects</span></h2>
+
+        <div class="projects-container">
+          <div class="project-box">
+            <img
+              src="images/bioskop.webp"
+              alt="Online cinema ticket website project"
+              loading="lazy"
+            />
+            <div class="projects-layer">
+              <h4>Online Cinema Tickets</h4>
+              <p>Online cinema ticket booking website.</p>
+              <a
+                href="https://bioskop-turu.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Online Cinema Tickets project"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <img
+              src="images/Blender.webp"
+              alt="Kitchen room 3D Blender project"
+              loading="lazy"
+            />
+            <div class="projects-layer">
+              <h4>Kitchen Room</h4>
+              <p>3D kitchen room visualization created with Blender 3.6.</p>
+              <a
+                href="https://drive.google.com/drive/folders/1SsGVpHUh2cP1XCIk-VESFyO1y9K7Zlhc?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Kitchen Room project"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <img
+              src="images/figma_gundarfilm.webp"
+              alt="Gundar Film UI design created in Figma"
+              loading="lazy"
+            />
+            <div class="projects-layer">
+              <h4>Gundar Film</h4>
+              <p>Movie platform UI/UX concept designed in Figma.</p>
+              <a
+                href="https://www.figma.com/proto/qvcgOhkusxSLY58AXQ5LIm/Gundar-Film?node-id=1-2&t=9zVfpcEtoTEcHJ6E-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Gundar Film Figma project"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <img
+              src="images/banjar_buah.webp"
+              alt="Banjar Buah website project"
+              loading="lazy"
+            />
+            <div class="projects-layer">
+              <h4>Banjar Buah</h4>
+              <p>
+                Inventory management website for an MSME fruit shop in the
+                Tangerang area.
+              </p>
+              <a
+                href="https://banjarbuah.rf.gd/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Banjar Buah project"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <img
+              src="images/RemajaBijak.webp"
+              alt="RemajaBijak educational website and quiz"
+              loading="lazy"
+            />
+            <div class="projects-layer">
+              <h4>RemajaBijak</h4>
+              <p>
+                Educational website featuring articles and an interactive quiz.
+              </p>
+              <a
+                href="https://maulanahidayatulloh.github.io/RemajaBijak/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View RemajaBijak project"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="project-box">
+            <img
+              src="images/rehatin.webp"
+              alt="Rehatin travel and hangout website project"
+              loading="lazy"
+            />
+            <div class="projects-layer">
+              <h4>Rehatin</h4>
+              <p>
+                Web application for discovering hangout, travel, and
+                entertainment destinations.
+              </p>
+              <a
+                href="https://github.com/MaulanaHidayatulloh/Rehatin"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Rehatin project"
+                ><i class="bx bx-link-external"></i
+              ></a>
+            </div>
           </div>
         </div>
+      </section>
 
-        <!-- #3 -->
-        <div class="project-box">
-          <img src="images/figma_gundarfilm.webp" alt="" />
+      <!-- Contact Section -->
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="heading" id="contact-title">Let's <span>Connect!</span></h2>
+        <p class="section-intro">
+          Have a project, opportunity, or collaboration in mind? Send me a
+          message and I will get back to you by email.
+        </p>
 
-          <div class="projects-layer">
-            <h4>Gundar Film</h4>
-            <p>This is a Gundar Film project made with Figma.com.</p>
-            <a
-              href="https://www.figma.com/proto/qvcgOhkusxSLY58AXQ5LIm/Gundar-Film?node-id=1-2&t=9zVfpcEtoTEcHJ6E-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2"
-              ><i class="bx bx-link-external"></i
-            ></a>
+        <form id="contact-form">
+          <div class="input-box">
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              aria-label="Full Name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              aria-label="Email Address"
+              required
+            />
           </div>
-        </div>
-
-        <!-- #4 -->
-        <div class="project-box">
-          <img src="images/CateringKita.webp" alt="" />
-
-          <div class="projects-layer">
-            <h4>Project Catering Kita</h4>
-            <p>Online catering booking website</p>
-            <a href="https://github.com/MaulanaHidayatulloh/Catering-Kita"
-              ><i class="bx bx-link-external"></i
-            ></a>
+          <div class="input-box">
+            <input
+              type="text"
+              name="phone"
+              placeholder="Mobile Number"
+              aria-label="Mobile Number"
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Email Subject"
+              aria-label="Email Subject"
+              required
+            />
           </div>
-        </div>
+          <textarea
+            name="message"
+            rows="10"
+            placeholder="Your Message"
+            aria-label="Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
 
-        <!-- #5 -->
-        <div class="project-box">
-          <img src="images/warung-bangjaja.webp" alt="" />
-
-          <div class="projects-layer">
-            <h4>Project Warung BangJaja</h4>
-            <p>
-              This is a shop website project for buying basic necessities
-              online.
-            </p>
-            <a href="https://warung-bangjaja.free.nf"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- #6 -->
-        <div class="project-box">
-          <img src="images/RemajaBijak.webp" alt="" />
-
-          <div class="projects-layer">
-            <h4>Project RemajaBijak</h4>
-            <p>
-              This is a website about sex education, and there is a quiz game.
-            </p>
-            <a href="https://maulanahidayatulloh.github.io/RemajaBijak/"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- #7 -->
-        <div class="project-box">
-          <img src="images/rehatin.webp" alt="" />
-
-          <div class="projects-layer">
-            <h4>Project Rehatin</h4>
-            <p>
-              This is a website for looking for places to hangout, travel,
-              entertainment etc.
-            </p>
-            <a href="https://github.com/MaulanaHidayatulloh/Rehatin"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- #8 -->
-        <div class="project-box">
-          <img src="images/RehatinV2.webp" alt="" />
-
-          <div class="projects-layer">
-            <h4>Project Rehatin V2</h4>
-            <p>
-              An updated version of the Rehatin website with an added chatbot
-              feature.
-            </p>
-            <a href="https://github.com/MaulanaHidayatulloh/Rehatin_V2"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-
-        <!-- #9 -->
-        <div class="project-box">
-          <img src="images/banjar_buah.webp" alt="" />
-
-          <div class="projects-layer">
-            <h4>Project Banjar Buah</h4>
-            <p>
-              Inventory management website for an MSME fruit shop in the
-              Tangerang area.
-            </p>
-            <a href="https://banjarbuah.rf.gd/"
-              ><i class="bx bx-link-external"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
-
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-        </div>
-        <div class="input-box">
-          <input type="text" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
-        </div>
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-    </section>
+        <a class="contact-email" href="mailto:maulhidayatulloh@gmail.com">
+          <i class="bx bx-envelope"></i> maulhidayatulloh@gmail.com
+        </a>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -446,9 +813,10 @@
           Reserved
         </p>
       </div>
-
       <div class="footer-iconTop">
-        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+        <a href="#home" aria-label="Back to top"
+          ><i class="bx bx-up-arrow-alt"></i
+        ></a>
       </div>
     </footer>
 

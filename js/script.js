@@ -39,12 +39,45 @@ window.onscroll = () => {
 };
 
 // Dark Mode
-let darkModeIcon = document.querySelector("#darkMode-icon");
+const darkModeIcon = document.querySelector("#darkMode-icon");
 
-darkModeIcon.onclick = () => {
-  darkModeIcon.classList.toggle("bx-sun");
-  document.body.classList.toggle("dark-mode");
-};
+darkModeIcon.addEventListener("click", () => {
+  const darkModeEnabled = document.body.classList.toggle("dark-mode");
+  darkModeIcon.classList.toggle("bx-sun", darkModeEnabled);
+  darkModeIcon.classList.toggle("bx-moon", !darkModeEnabled);
+  darkModeIcon.setAttribute(
+    "aria-label",
+    darkModeEnabled ? "Switch to light mode" : "Switch to dark mode",
+  );
+});
+
+// Contact form: open the user's email client with a prepared message.
+const contactForm = document.querySelector("#contact-form");
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const formData = new FormData(contactForm);
+  const name = formData.get("name");
+  const email = formData.get("email");
+  const phone = formData.get("phone") || "Not provided";
+  const subject = formData.get("subject");
+  const message = formData.get("message");
+
+  const body = [
+    `Hello Maulana,`,
+    "",
+    `Name: ${name}`,
+    `Email: ${email}`,
+    `Mobile Number: ${phone}`,
+    "",
+    message,
+    "",
+    "Sent from Maulana Hidayatulloh Mujanah's portfolio website.",
+  ].join("\n");
+
+  window.location.href = `mailto:maulhidayatulloh@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+});
 
 // Scroll Reveal
 ScrollReveal({
